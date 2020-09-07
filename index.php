@@ -168,7 +168,7 @@ include_once 'reg_log/functions.php';
     }); 
 
 	
-    $(document).on('change', '#message', function () {
+    $('body').on('change', '#message', function () {
 	if($('#message').val() == 0){
 
 	    alert('barev')
