@@ -131,7 +131,7 @@ include_once 'reg_log/functions.php';
             method:"POST",  
             data:{to:to},
             success:function(data){  
-				$('#sended_messages').html(data);
+		$('#sended_messages').html(data);
             }  
         });  
     } 
@@ -165,7 +165,20 @@ include_once 'reg_log/functions.php';
                 // fetch_data();  
             }  
         })  
-    });  
+    }); 
+
+	
+    $(document).on('change', '#message', function () {
+	if($('#message').val() = 0){
+
+	    alert()
+	
+	}
+
+    })
+
+
+
     $(document).on('keypress',function(e) {
 	    if(e.which == 13) {
 	    	var message = $('#message').val();  

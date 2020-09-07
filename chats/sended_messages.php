@@ -31,8 +31,8 @@ if($rows > 0)
 	if ($rows['is_tiping'] == 1) {
                 $output .= '
                         <div class="message_from_me">
-                                        <p class="from_me">Is typing ...</p>      
-                                </div>';
+                        	<p class="from_me">Is typing ...</p>      
+                        </div>';
         }
 
 		// $output .= ''.(($rows['from_user'] == $from) ?
