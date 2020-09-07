@@ -1,0 +1,113 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#main_header{
+	width: 100%;
+	height: 100px;
+	background-color: #ccc;
+}
+
+#main_header li {
+	list-style: none;
+}
+
+.scrollup{
+	bottom: 4%;
+	/*display: none;*/
+	opacity: 0;
+	position: fixed;
+	transition: 0.1s ease;
+    z-index: 2000;
+}
+
+.scrolimg{
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+}
+td{
+	cursor: pointer;
+}
+td:hover{
+	background-color: #ccc;
+}
+
+#message_container{
+	display: none;
+	width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#messages{
+	width: 100%;
+    height: 500px;
+    overflow-y: scroll;
+    max-height: 500px;
+    border: 1px solid #ced4da;
+	position: relative;
+
+    
+}
+
+#message_container #message {
+	float: left;
+}
+
+#user_info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #ced4da;
+}
+
+.back {
+	width: 50px;
+	height: 50px;
+	left: 0;
+	position: absolute;
+}
+
+#sended_messages {
+	width: 100%; 
+	height: auto;
+	min-height: 100px;
+	position: absolute;
+    top: 55px;
+	right: 2%;
+    text-align: right;
+}
+
+#recived_messages {
+	/*width: 45%; */
+	height: auto;
+	min-height: 100px;
+	position: absolute;
+    top: 55px;
+	left: 2%;
+    text-align: right;
+}
+
+
+.to_me {
+	text-align: left !important;
+	margin-left: 3%;
+	/*border: 1px solid; */
+}
+
+.from_me {
+	text-align: right !important;
+	margin-right: 3%;
+}
+
+.date_time {
+	font-size: 10px;
+}
