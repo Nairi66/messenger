@@ -24,7 +24,17 @@ if($rows > 0)
 					<hr><p class="to_me">'.$rows["message_text"].'</p>
 					<p class="date_time to_me">'.$rows["date_sended"].'</p><hr>
 				</div>';
-    	}
+	}
+
+
+
+	if ($rows['is_tiping'] == 1) {
+                $output .= '
+                        <div class="message_from_me">
+                                        <p class="from_me">Is typing ...</p>      
+                                </div>';
+        }
+
 		// $output .= ''.(($rows['from_user'] == $from) ?
 		//  		'<div class="message_from_me">
 		// 			<p class="from_me">'.$rows["message_text"].'</p>
